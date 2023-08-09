@@ -1,0 +1,145 @@
+/*************************************************************
+                            General
+*************************************************************/
+
+* {
+    font-family: 'syne', sans-serif;
+}
+
+:root {
+    --main-color: #E3D9D0;
+    --second-color: #3B8E46;
+    --button-color: #E0B9B4;
+    --nav-button: #DC9F96; 
+}
+
+/***************************Header*******************************/
+
+/*Permet de definir la taille de ma navbar*/
+.minimal-header {
+    width: 1440px;
+    height: 80px;
+    margin-bottom: 0% !important;
+    padding-bottom: 0%;
+}
+
+
+/* permet de definir la taille de ma police*/
+.menu-item-185:hover, .admin:hover{
+	font-weight:700;
+}
+
+/*Permet de definir l'odre de mon menu et un arriére plan sur un des lien de navigation*/
+.menu-item-184 {
+    order: 3;
+	background-color: #DC9F96;
+	font-weight: 700;
+}
+
+/*Permet de mettre un effet au survole sur mon lien*/
+.menu-item-184:hover{
+    background-color:#c02e43;
+}  
+
+
+
+
+/************************* page home*****************************/
+
+
+/* Permet de donner une largeur à ma section 
+- une couleur de fond
+- un arrondi sur la partie du bas de ma section 
+- Une ombre sur la partie du bas */
+
+.hero {
+    width: 100%;
+    height: 550px;
+    background-color:var(--main-color);
+    border-radius: 0 0 25% 25%;
+    box-shadow: 0 5px 0 var(--main-color) ; 
+}
+
+.energie {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    background-color: #FFFFFF;
+}
+
+.gout {
+    width: 100%;
+    height: 780px;
+    padding-top: 1%;
+    background-color:var(--main-color);
+    border-radius: 0 0 10% 10%;
+}
+
+.parfum {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.avis {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+
+.bouton {
+    background-color: var(--button-color);
+    padding-bottom: 2%;   
+}
+
+
+/*********************Nous rencontrer********************/
+
+.rencontre {
+    width: 100%;
+    height: 30%;
+    background-color: var(--main-color);
+    border-radius: 0 0 10% 10%;
+    margin-top: 0%;
+    padding-bottom: 20%;
+}
+
+.texte-rencontre {
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.contact-form {
+    margin-left: 35.5%;
+    margin-right: 35.5%;
+
+}
+/*********************commander***************************/
+.section-commander {
+    background-color: var(--second-color);
+    width: 100%;
+    margin-top: 0% !important;
+    padding-top: 5%;
+}
+.titre-commande {
+    margin-left: 15%;
+}
+
+.commande-parfum {
+    margin-left: 15%;
+    margin-right: 15%;   
+}
+
+#formulaire-commande{
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+
+/*******************Footer*********************************/
+
+
+
+
+/*******************mediaquerie*****************************/
