@@ -28,27 +28,41 @@
     padding-bottom: 1% !important;
 }
 
+/* Permet de flex du parent de ma div main menu*/
+#site-navigation{
+    display: flex;
+}
+
+/* permet le flex pour mon menu de navigation*/
+.main-menu{
+    display: flex !important;
+}
+
+/*Permet le placement de mon lien admin en 2 eme position dans mon menu de navigation*/
+.main-menu li:nth-last-of-type(2) {
+    order: 2 !important;   
+}
+
 /* permet de definir la taille de ma police*/
-.menu-item-185:hover, .admin:hover{
+.menu-item-185:hover,:hover{
 	font-weight:700;
 }
 
 /*Permet de definir l'odre de mon menu et un arriére plan sur un des lien de navigation*/
-.menu-item-184 {
-    order: 3;
+.menu-item-1195 {
 	background-color: #DC9F96;
 	font-weight: 700;
 }
+
 
 /*Permet d'avoir l'écriture de mes lien en blanc*/
 #menu-item-184 > a{
 	color: white;
 }
-
 /*Permet de mettre un effet au survole sur mon lien*/
 .menu-item-184:hover{
     background-color:#c02e43;
-}  
+} 
 
 /************************* page home*****************************/
 
@@ -72,6 +86,7 @@
 .gout {
     width: 100%;
     height: auto;
+
 }
 
 /*Permet le style de la section parfum*/
@@ -260,10 +275,14 @@ input[type=text], input[type=email]{
 
 
 /*******************Footer*********************************/
-
-.footer-bottom {
-    margin-top: 3% !important;
+#footer-bottom-menu{
+    text-align: center !important;
+    margin: auto !important;
+    float: none !important;
 }
-
+#footer-bottom {
+    
+    text-align: center !important;
+}
 
 /*******************mediaquerie*****************************/
