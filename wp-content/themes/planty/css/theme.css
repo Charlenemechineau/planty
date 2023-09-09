@@ -25,7 +25,7 @@
 /*Permet de retirer le padding pour coller ma section a ma navigation*/
 #content-wrap{
     padding-top: 0px !important;
-    padding-bottom: 1% !important;
+    padding-bottom: 0% !important;
 }
 
 /* Permet de flex du parent de ma div main menu*/
@@ -44,7 +44,7 @@
 }
 
 /* permet de definir la taille de ma police*/
-.menu-item-185:hover,:hover{
+.menu-item-185:hover{
 	font-weight:700;
 }
 
@@ -113,7 +113,8 @@
 }
 .elementor-widget-wrap {
     width: 50%;
-    text-align: center;
+    
+    
 }
 /*Permet la mise  en page de mon texte grace aux marges*/
 .texte-rencontre {
@@ -134,6 +135,7 @@
 
 #wpforms-submit-143 {
     background-color: #E0B9B4 !important;
+    margin-left: 35%;
 }
 
  
@@ -201,8 +203,7 @@
 
 /*permet a ma div contenant le bouton de lui donner une largeur*/
 .button-ok {
-    width: 50% ;
-    
+    width: 50% ;   
 }
 
  /*permet de donner la taille a mon bouton ok*/
@@ -228,7 +229,7 @@ input[type=submit]:hover{
     justify-items:center;
 }
 
-/*Permet d'ajouter ma ligne verticake dans le css
+/*Permet d'ajouter ma ligne verticale dans le css
 et de lui donner une marge pour avoir un décallage avec le bouton*/
 .separation{
     border-right: solid 1px white;
@@ -243,14 +244,13 @@ input[type=text], input[type=email]{
 	border-radius: 7px;
 }
  
-
-/**********************Zone test formulaire*************************/
+/*Permet le placement de mon formualaire de commande*/
 .formulaire-test{
     display: flex !important;
     justify-content: center !important;   
     width: 100% !important;    
 }
-
+/*Permet le placement et la taille de mon formulaire de commande*/
 .formulaire-commander{
     display: flex; 
     justify-content: center;
@@ -261,11 +261,21 @@ input[type=text], input[type=email]{
 }
 
 .formulaire-infos {
-    width: 45% !important;   
+    width: 45% !important;       
+}
+
+/*Permet de mettre le texte des mes H3 du formulaire en blanc*/
+.formulaire-infos h3 , label{
+    color: #FFFFFF;
 }
 
 .formulaire-livraison {
     width:45% !important;   
+}
+
+/*Permet de mettre le texte des mes H3 du formulaire en blanc*/
+.formulaire-livraison h3 ,label {
+    color: #FFFFFF;
 }
 
 .bouton-commander {
@@ -274,15 +284,74 @@ input[type=text], input[type=email]{
 }
 
 
-/*******************Footer*********************************/
+/***********************Footer*********************************/
+/*Permet le placement de mon footer*/
 #footer-bottom-menu{
     text-align: center !important;
     margin: auto !important;
     float: none !important;
 }
-#footer-bottom {
-    
+
+/*Permet de mettre au centre le lien de mon footer*/
+#footer-bottom {   
     text-align: center !important;
 }
 
-/*******************mediaquerie*****************************/
+
+/************************mediaquerie*****************************/
+/*Permet de mettre an place les éléments de la média queri pour la version mobile*/
+@media (max-width:320px) {
+
+   
+/*Permet de mettre en ligne les élèments avec une largeur défini*/  
+    .groupe-quantite{
+        display: flex;
+        width: 70%;
+    }
+
+/*Permet de donner une taille à mon bouton*/
+    .button-ok {
+        width: 60%;
+    }
+
+/*Permet de mettre les éléments de mon formulaire l'un en dessoous de l'autre en colonne et centré*/
+   .formulaire-commander {
+        flex-direction: column;
+        align-content: center ;
+        padding-bottom: 0% !important;
+    } 
+
+/*Permet de retier la separation qui separe mon formulaire*/
+   .separation{
+        display: none;
+    }
+
+/*Permet de donner une largeur à mon formaulire*/
+   .formulaire-infos {
+        width: 75% !important;   
+    }
+
+/*Permet de donner une largeur à mon formaulire*/
+    .formulaire-livraison {
+        width:75% !important;   
+    }
+    
+    .content-area {
+        margin-bottom: 0% !important;
+    }
+
+}
+@media (max-width:1024px) {
+   
+    /*Permet de mettre en ligne les élèments avec une largeur défini*/  
+     .groupe-quantite {
+        display: flex;
+        width: 100%;
+    }
+
+    input[type=number] {    
+        width: 35px !important;   
+       
+
+    }
+}
