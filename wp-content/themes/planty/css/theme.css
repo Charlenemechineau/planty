@@ -224,11 +224,6 @@ input[type=submit]:hover{
 
 /**********************Formulaire de commande***************/
 
-.elementor-element-d7be4bb {
-    text-align: start;
-    justify-items:center;
-}
-
 /*Permet d'ajouter ma ligne verticale dans le css
 et de lui donner une marge pour avoir un décallage avec le bouton*/
 .separation{
@@ -250,7 +245,8 @@ input[type=text], input[type=email]{
     justify-content: center !important;   
     width: 100% !important;    
 }
-/*Permet le placement et la taille de mon formulaire de commande*/
+
+/*Permet le placement et la largeur de mon formulaire commander*/
 .formulaire-commander{
     display: flex; 
     justify-content: center;
@@ -260,6 +256,7 @@ input[type=text], input[type=email]{
     width: 100%;
 }
 
+/*Permet de donner une largeur à la deuxieme partie de mon formulaire infos*/
 .formulaire-infos {
     width: 45% !important;       
 }
@@ -269,6 +266,7 @@ input[type=text], input[type=email]{
     color: #FFFFFF;
 }
 
+/*Permet de donner une largeur à mon formulaire de livraison*/
 .formulaire-livraison {
     width:45% !important;   
 }
@@ -278,6 +276,7 @@ input[type=text], input[type=email]{
     color: #FFFFFF;
 }
 
+/*Permet le placement du bouton commander au centre*/
 .bouton-commander {
     margin-top: 15% !important;
     margin-bottom: 15% !important;
@@ -296,6 +295,8 @@ input[type=text], input[type=email]{
 #footer-bottom {   
     text-align: center !important;
 }
+
+
 
 
 /************************mediaquerie*****************************/
@@ -355,3 +356,4 @@ input[type=text], input[type=email]{
 
     }
 }
+
