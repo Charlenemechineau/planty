@@ -109,19 +109,18 @@
 .rencontre {
     width: 100%;
     height: auto;
-    /*background-color: var(--main-color);   */ 
+
 }
+/*Permet de donner une largeur de 50%*/
 .elementor-widget-wrap {
-    width: 50%;
-    
-    
+    width: 50%;      
 }
+
 /*Permet la mise  en page de mon texte grace aux marges*/
 .texte-rencontre {
     width: 50%;
     padding-bottom: 5%;
 }
-
 
 /*Permet la mise en page de mon formulaire grace aux marges*/
 .contact-form {
@@ -129,10 +128,12 @@
     padding-bottom: 7%;
 }
 
+/*Permet de donner une marge à gauche */
 .wpforms-submit-container {
     margin-left: 50%;  
 }
 
+/*Permet de mettre un fond et une marge a mon submit*/
 #wpforms-submit-143 {
     background-color: #E0B9B4 !important;
     margin-left: 35%;
@@ -148,6 +149,7 @@
     margin-top: 0%;
     padding-bottom: 15%;
 }
+
 /*Permet de donner une marge pour mon titre*/
 .titre-commande {
     margin-left: 15%;
@@ -231,7 +233,7 @@ et de lui donner une marge pour avoir un décallage avec le bouton*/
     margin-bottom: 2%;
 }
 
- /*Permet de faire la style des input du formulaire et le placement*/
+/*Permet de faire la style des input du formulaire et le placement*/
 input[type=text], input[type=email]{
     display: flex;
 	height: 55px;
@@ -297,63 +299,58 @@ input[type=text], input[type=email]{
 }
 
 
-
-
 /************************mediaquerie*****************************/
 /*Permet de mettre an place les éléments de la média queri pour la version mobile*/
 @media (max-width:320px) {
-
-   
+  
 /*Permet de mettre en ligne les élèments avec une largeur défini*/  
-    .groupe-quantite{
-        display: flex;
-        width: 70%;
+.groupe-quantite{
+    display: flex;
+    width: 70%;
     }
 
 /*Permet de donner une taille à mon bouton*/
-    .button-ok {
-        width: 60%;
+.button-ok {
+    width: 60%;
     }
 
 /*Permet de mettre les éléments de mon formulaire l'un en dessoous de l'autre en colonne et centré*/
-   .formulaire-commander {
-        flex-direction: column;
-        align-content: center ;
-        padding-bottom: 0% !important;
+.formulaire-commander {
+    flex-direction: column;
+    align-content: center ;
+     padding-bottom: 0% !important;
     } 
 
 /*Permet de retier la separation qui separe mon formulaire*/
-   .separation{
-        display: none;
+.separation{
+    display: none;
     }
 
 /*Permet de donner une largeur à mon formaulire*/
-   .formulaire-infos {
-        width: 75% !important;   
+.formulaire-infos {
+    width: 75% !important;   
     }
 
 /*Permet de donner une largeur à mon formaulire*/
-    .formulaire-livraison {
-        width:75% !important;   
+.formulaire-livraison {
+    width:75% !important;   
     }
     
-    .content-area {
-        margin-bottom: 0% !important;
+.content-area {
+    margin-bottom: 0% !important;
     }
-
 }
+
 @media (max-width:1024px) {
-   
-    /*Permet de mettre en ligne les élèments avec une largeur défini*/  
-     .groupe-quantite {
-        display: flex;
-        width: 100%;
+     
+ /*Permet de mettre en ligne les élèments avec une largeur défini*/  
+.groupe-quantite {
+    display: flex;
+    width: 100%;
     }
-
-    input[type=number] {    
-        width: 35px !important;   
-       
-
+/*Permet de donner une largeur a mon input*/
+input[type=number] {    
+    width: 35px !important;   
     }
 }
 
