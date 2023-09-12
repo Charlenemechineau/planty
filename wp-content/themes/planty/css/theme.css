@@ -54,7 +54,9 @@
 	font-weight: 700;
 }
 
-
+.menu-item-1195:hover {
+    background-color: #c02e43;
+}
 /*Permet d'avoir l'écriture de mes lien en blanc*/
 #menu-item-184 > a{
 	color: white;
